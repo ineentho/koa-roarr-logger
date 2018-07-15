@@ -1,0 +1,34 @@
+{
+  "name": "koa-roarr-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ineentho/koa-roarr-logger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ineentho/koa-roarr-logger/issues"
+  },
+  "homepage": "https://github.com/ineentho/koa-roarr-logger#readme",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "prettier": "^1.13.7"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
+}
