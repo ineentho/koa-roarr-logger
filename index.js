@@ -5,7 +5,7 @@ const requestLogger = log => async (ctx, next) => {
   const { request, response } = ctx
 
   const clientRequestId = ctx.request.headers['x-request-id']
-  const requestId = clientRequestId ? `c-${clientRequestId}` : `s-${uuidv4()}`
+  const requestId = clientRequestId ? `${clientRequestId}` : `s-${uuidv4()}`
   ctx.log = log.child({ requestId })
 
   await next()
