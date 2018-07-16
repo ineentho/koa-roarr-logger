@@ -1,6 +1,6 @@
 const uuidv4 = require('uuid/v4')
 
-const requestLogger = log => async (ctx, next) => {
+const koaRoarrLogger = log => async (ctx, next) => {
   const start = Date.now()
   const { request, response } = ctx
 
@@ -12,10 +12,7 @@ const requestLogger = log => async (ctx, next) => {
 
   const time = Date.now() - start
 
-  ctx.log.debug(
-    { request, response, time },
-    `${request.method} ${request.url} ${response.status}`,
-  )
+  ctx.log.debug({ request, response, time }, 'http request')
 }
 
-module.exports = requestLogger
+module.exports = koaRoarrLogger
